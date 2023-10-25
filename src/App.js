@@ -1,16 +1,16 @@
 import './App.css';
-import icon_mono_1428p from './auralis-icon-1428p-mono.png'
-
-
 import {
   createBrowserRouter,
   RouterProvider,
-  Link,
   Outlet
 } from "react-router-dom";
 
+import routes_index from "./routes/index"
+import routes_page1 from "./routes/page1"
+import routes_404 from "./routes/404"
 
-
+import Header from "./components/header"
+import Background from "./components/background"
 const router = createBrowserRouter([
   {
     path: "/",
@@ -18,13 +18,16 @@ const router = createBrowserRouter([
     children: [
       {
         path: "p1/",
-        element: <p>p1</p>,
+        element: routes_page1,
+        errorElement: routes_404
       },
       {
         path: "/",
-        element: <p>home</p>,
+        element: routes_index,
+        errorElement: routes_404
       },
     ],
+    errorElement: routes_404
 
   }
 ]);
@@ -43,22 +46,8 @@ function Root() {
   </>
 }
 
-const Header = () => {
-  return <div className="headerContainer">
-    <div className="headerFlex">
-      <img alt={'auralis icon'} className="icon" src={icon_mono_1428p}></img>
-      <Link className="Link" to={"/"}>Home</Link>
-      <Link className="Link" to={"/p1"}>p1</Link>
 
-    </div>
-  </div>
-}
 
-function Background() {
-  return <div className="background">
-
-  </div>
-}
 
 
 export default App;
