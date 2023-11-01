@@ -5,7 +5,7 @@ import {
   Outlet
 } from "react-router-dom";
 
-import routes_index from "./routes/index"
+import RoutesIndex from "./routes/index"
 import routes_page1 from "./routes/page1"
 import routes_404 from "./routes/404"
 
@@ -23,7 +23,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/",
-        element: routes_index,
+        element: <RoutesIndex></RoutesIndex>,
         errorElement: routes_404
       },
     ],
@@ -39,10 +39,11 @@ function App() {
 }
 
 function Root() {
+
   return <>
     <Header></Header>
     <Background></Background>
-    <Outlet></Outlet>
+    <Outlet ></Outlet>
   </>
 }
 

@@ -2,10 +2,11 @@
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
+  height: 105%;
   overflow: scroll;
   color: black;
+  padding: 0;
+  margin: 0;
 }
 
 @font-face {
@@ -29,6 +30,9 @@ p {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  box-sizing: border-box;
 }
 
 .headerContainer>.headerFlex {
@@ -59,22 +63,20 @@ p {
 div:has(.sticky) {
   position: sticky;
   top: -1px;
-  border-bottom: 1px solid rgba(0, 0, 0, 0);
   background: rgba(255, 255, 255, 0);
-  transition: 0.5s;
+  transition: box-shadow 0.5s;
   z-index: 100;
 }
 
 .is-pinned {
-  border-bottom: 1px solid rgba(100, 100, 100, 0.4) !important;
-  background: rgba(255, 255, 255, 0.1) !important;
-  backdrop-filter: blur(10px);
-
+  background: rgba(255, 255, 255, 0.7) !important;
+  backdrop-filter: blur(15px);
+  box-shadow: 0px 18px 25px -12px rgba(0, 0, 0, 0.4);
 }
 
 .grow {
   flex-grow: 1;
-  width: clamp(0, 800px, 800px)
+  max-width: 800px;
 }
 
 .headerContainer>.headerFlex>.icon {
@@ -128,8 +130,8 @@ div:has(.sticky) {
 }
 
 .headerTitle {
-  font-weight: 600 !important;
-  font-style: normal !important;
+  font-weight: 400 !important;
+  font-style: italic !important;
   font-size: 20px;
 }
 
@@ -148,8 +150,9 @@ div:has(.sticky) {
 .section {
   width: 100%;
   height: auto;
-  min-height: 70%;
+  min-height: calc(100vh - 80px);
   position: relative;
+  overflow: visible
 }
 
 .iconAnimation {
@@ -212,4 +215,74 @@ div:has(.sticky) {
   font-style: normal;
   font-weight: bold;
   font-family: "spotifyBold";
+}
+
+.gradientBackground {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100%;
+  background: linear-gradient(145deg, rgba(75, 238, 143, 0.9) 0%, rgba(75, 238, 128, 0.9) 15%, rgba(116, 182, 176, .9) 100%);
+  backdrop-filter: blur(30px);
+}
+
+.divlowerhalf {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: auto;
+  height: 100%;
+  animation: iconInlowerHalf cubic-bezier(.52, .52, .17, 1) 4s forwards
+}
+
+
+@keyframes iconInlowerHalf {
+  0% {
+    transform: translateY(100%);
+  }
+
+  40% {
+    transform: translateY(100%);
+
+  }
+
+  100% {
+    transform: translateY(0px);
+
+  }
+}
+
+.verticalScroll {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: auto;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 10px
+}
+
+.phoneDisplay {
+  position: relative;
+  height: auto;
+  width: 300px;
+  overflow: visible
+}
+
+.phoneDisplay>:nth-child(1) {
+  width: 400px;
+  position: absolute;
+  top: 0;
+  left: 0
+}
+
+.phoneDisplay>:nth-child(2) {
+  width: 212px;
+  transform: translate(17px, 13px);
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 30px
 }
