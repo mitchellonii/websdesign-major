@@ -215,6 +215,8 @@ div:has(.sticky) {
   font-style: normal;
   font-weight: bold;
   font-family: "spotifyBold";
+  filter: drop-shadow(1px 7px 7px rgb(0 0 0 / 0.4));
+
 }
 
 .gradientBackground {
@@ -223,7 +225,7 @@ div:has(.sticky) {
   left: 0;
   width: 100vw;
   height: 100%;
-  background: linear-gradient(145deg, rgba(75, 238, 143, 0.9) 0%, rgba(75, 238, 128, 0.9) 15%, rgba(116, 182, 176, .9) 100%);
+  background: linear-gradient(145deg, rgba(75, 238, 143, 0.9) 0%, rgba(75, 238, 128, 0.9) 15%, rgba(116, 182, 176, 1) 100%);
   backdrop-filter: blur(30px);
 }
 
@@ -285,4 +287,80 @@ div:has(.sticky) {
   top: 0;
   left: 0;
   border-radius: 30px
+}
+
+
+.centerText {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sectionHeaderCompact {
+  width: 100%;
+  position: relative;
+  text-align: center;
+  font-size: 40px;
+  margin-top: 30px;
+  font-style: normal;
+  font-weight: bold;
+  font-family: "spotifyBold";
+}
+
+.sectionText {
+  width: 100%;
+  position: relative;
+  text-align: center;
+  font-size: 30px;
+  margin-top: 30px;
+  font-style: normal;
+  font-weight: 400;
+  font-family: "spotifyBold";
+}
+
+.bulitin::before {
+  content: "- "
+}
+
+#fadeOnScrollView {
+  opacity: 0;
+  transition: 1s
+}
+
+.fadeIn {
+  opacity: 1 !important;
+  transform: translateY(-30px)
+}
+
+mark {
+  background: transparent !important;
+  color: #676087;
+  font-style: bold;
+  font-weight: 700;
+  transform: translateY(0px)
+}
+
+
+.flexGrid {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  padding: 40px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 100px;
+  flex-wrap: wrap;
+}
+
+.smallSection {
+  height: 400px !important;
+  min-height: unset;
 }
