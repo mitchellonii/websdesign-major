@@ -10,7 +10,7 @@ import routes_page1 from "./routes/page1"
 import routes_404 from "./routes/404"
 
 import Header from "./components/header"
-import Background from "./components/background"
+import Footer from "./components/footer"
 const router = createBrowserRouter([
   {
     path: "/",
@@ -42,8 +42,8 @@ function Root() {
 
   return <>
     <Header></Header>
-    <Background></Background>
     <Outlet ></Outlet>
+    <Footer></Footer>
   </>
 }
 

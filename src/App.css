@@ -7,6 +7,10 @@
   color: black;
   padding: 0;
   margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 50px;
 }
 
 @font-face {
@@ -107,12 +111,10 @@ div:has(.sticky) {
 }
 
 .content {
-  position: absolute;
-  top: 100px;
+  position: relative;
   left: 0px;
   width: 100%;
   height: auto;
-  min-height: calc(100% - 70px);
 }
 
 .centerFlex {
@@ -361,6 +363,63 @@ mark {
 }
 
 .smallSection {
-  height: 400px !important;
+  min-height: 400px !important;
+  height: auto !important;
+}
+
+.footer {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+.footer {
+  height: 200px !important;
   min-height: unset;
+
+}
+
+.footer:has(.section)>.section {
+  min-height: 200px !important;
+  height: auto;
+}
+
+.footer>.section>.footerFlex {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer>.section>.footerFlex>div {
+  height: 100%;
+  padding: 30px;
+  box-sizing: border-box;
+  width: auto;
+  max-width: 33%;
+}
+
+.footer>.section>.footerFlex>div>img {
+  width: clamp(100px, 200px, 300px);
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.textrowdivfooter {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  justify-content: space-evenly;
+}
+
+.textrowdivfooter>p {
+  line-height: 10px;
+  padding: 0 !important;
+  margin: 0 !important;
 }
