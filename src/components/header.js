@@ -21,13 +21,10 @@ export default function Header() {
         <div className="headerFlex">
             <img alt={'auralis icon'} className="icon" src={icon_mono_1428p}></img>
             <Link className="Link" to={"/"}>Home</Link>
-            <Link className="Link" to={"/p1"}>page 1</Link>
-            <Link className="Link" to={"/p1"}>page 1</Link>
-            <Link className="Link" to={"/p1"}>page 1</Link>
-            <Link className="Link" to={"/p1"}>page 1</Link>
-            <Link className="Link" to={"/p1"}>page 1</Link>
-            <Link className="Link" to={"/p1"}>page 1</Link>
-            <Link className="Link" to={"/p1"}>page 1</Link>
+            <Link className="Link" to={"/plans"}>Plans</Link>
+            <Link className="Link" to={"/about"}>About</Link>
+            <Link className="Link" to={"/download"}>Download</Link>
+            <Link className="Link" to={"/login"}>Sign-up / Log-in</Link>
 
 
         </div>
@@ -38,7 +35,7 @@ export default function Header() {
 
                 <p className="headerTitle">Auralis</p>
                 <div className="grow"></div>
-                <p className="headerSubtitle">Try 6 months for free*</p>
+                <Link className="headerSubtitle" to={"/login"} style={{ textDecoration: "none" }}>Try 6 months for free*</Link>
 
             </div>
         </div>

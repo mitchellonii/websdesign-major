@@ -1,10 +1,14 @@
 import Header from "../components/header"
-import Background from "../components/background"
 
 export default <>
     <Header></Header>
-    <Background></Background>
     <div className="content">
-        <p>404</p>
+        <div className="section">
+            <div className="centerFlex">
+                <p className="sectionHeaderCompact">404</p>
+                <p className="sectionHeaderCompact" style={{ fontSize: "15px" }}>That resource cannot be found on the server</p>
+
+            </div>
+        </div>
     </div>
 </>

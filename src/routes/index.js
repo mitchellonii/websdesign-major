@@ -7,7 +7,7 @@ import dj from "../dj.jpeg"
 import new__img from "../new.jpeg"
 import genre from "../genre.jpeg"
 import { useState, useEffect } from "react"
-
+import { Link } from "react-router-dom"
 
 function Return() {
     var [scrollAmount, setScrollAmount] = useState(0)
@@ -85,28 +85,28 @@ function Return() {
             </div>
         </div>
         <div className="section smallSection">
-            <div className="flexGrid">
-                <div>
+            <div className="flexGrid gridInfoThing">
+                <div id="fadeOnScrollView" className="delay0">
                     <p>With new accounts</p>
                     <p>You could get 6 months free</p>
                     <p>lorem ipsum</p>
-                    <button></button>
+                    <Link className="Link" to={"/login"}>Start trial</Link>
                 </div>
-                <div>
+                <div id="fadeOnScrollView" className="delay300">
                     <p>View all our</p>
                     <p>Flexibile plans for any price range</p>
                     <p>lorem ipsum</p>
-                    <button></button>
+                    <Link className="Link" to={"/plans"}>View plans</Link>
                 </div>
-                <div>
-                    <p>View all our</p>
-                    <p>Flexibile plans for any price range</p>
+                <div id="fadeOnScrollView" className="delay600">
+                    <p>Download Auralis on</p>
+                    <p>Any device</p>
                     <p>lorem ipsum</p>
-                    <button></button>
+                    <Link className="Link" to={"/download"}>Download</Link>
                 </div>
             </div>
         </div>
-    </div></>
+    </div ></>
 }
 
 
