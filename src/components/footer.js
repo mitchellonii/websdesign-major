@@ -7,16 +7,16 @@ export default function Header() {
                 <img src={auralis_logotxt}></img>
             </div>
             <div className="textrowdivfooter">
-                <p>aaaaaa</p>
-                <p>b</p>
-                <p>c</p>
-                <p>d</p>
+                <p className="headerSubtext">Company</p>
+                <p>Legal</p>
+                <p>Privacy policy</p>
+                <p>Terms of use</p>
             </div>
             <div className="textrowdivfooter">
-                <p>aaaaaas</p>
-                <p>b</p>
-                <p>c</p>
-                <p>d</p>
+                <p>Account</p>
+                <p>Dashboard</p>
+                <p>Log-in</p>
+                <p>Upgrade</p>
             </div>
         </div>
     </div></div></>
