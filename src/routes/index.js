@@ -84,7 +84,7 @@ function Return() {
 
             </div>
         </div>
-        <div className="section smallSection">
+        <div className="section smallSection" style={{ background: "white" }}>
             <div className="flexGrid gridInfoThing">
                 <div id="fadeOnScrollView" className="delay0">
                     <p>With new accounts</p>
