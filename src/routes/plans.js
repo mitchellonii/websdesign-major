@@ -1,5 +1,4 @@
 import React from 'react'
-import RenderCanvas from "../components/3dCanvas"
 import { Link } from "react-router-dom"
 
 export default function Viewer() {
@@ -8,11 +7,7 @@ export default function Viewer() {
         <>
             <div className="content">
                 <div className="section" style={{ height: "700px" }}>
-                    <div className="backgroundCanvas">
-                        <div className='canvasContainer'>
-                            <RenderCanvas></RenderCanvas>
-                        </div>
-                    </div>
+
                     <p className="sectionHeaderCompact">Plans</p>
 
                     <div className='columnContainer'>

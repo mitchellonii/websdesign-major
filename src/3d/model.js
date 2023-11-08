@@ -7,9 +7,6 @@ export default function Model(props) {
 
     function handleScroll(e) {
         setScrollAmount(e.target.scrollTop)
-        console.log(e.target.scrollTop)
-
-
     }
     useEffect(() => {
         document.querySelector("#root").onscroll = handleScroll

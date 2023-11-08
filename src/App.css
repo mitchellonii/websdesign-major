@@ -514,7 +514,6 @@ mark {
   top: 100px;
   left: 0;
   z-index: -1;
-  transform: translateX(30%);
 }
 
 .columnContainer {
@@ -607,5 +606,32 @@ mark {
 }
 
 .downloadContainer>div>img {
-  width: 100px;
+  width: 200px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.badges {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+}
+
+.badges>img {
+  height: 60px;
+}
+
+.downloadTitle {
+  position: relative;
+  width: 100%;
+  text-align: center;
+  font-weight: bold;
+  font-size: 30px;
 }
