@@ -508,12 +508,13 @@ mark {
 }
 
 .canvasContainer {
-  position: sticky;
+  position: absolute;
   width: 100vw;
   height: 70vh;
-  top: 100px;
+  top: 0px;
   left: 0;
   z-index: -1;
+  transform: translateX(30%);
 }
 
 .columnContainer {
@@ -626,6 +627,7 @@ mark {
 
 .badges>img {
   height: 60px;
+  cursor: pointer;
 }
 
 .downloadTitle {
@@ -634,4 +636,47 @@ mark {
   text-align: center;
   font-weight: bold;
   font-size: 30px;
+}
+
+
+.downloadTitle {
+  position: relative;
+  width: 100%;
+  text-align: center;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+}
+
+
+.downloadContainer>div>p {
+  position: relative;
+  width: 100%;
+  text-align: center;
+}
+
+.downloadButton {
+  border-radius: 40px;
+  border: none;
+  width: max-content !important;
+  font-weight: bold;
+  box-sizing: border-box;
+  padding: 6px;
+  padding-left: 20px;
+  padding-right: 20px;
+  background: rgb(116, 182, 181);
+  border-radius: 40px;
+  box-sizing: border-box;
+  color: white;
+  font-style: normal;
+  cursor: pointer;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.leftText>* {
+  text-align: left !important;
+  left: 33% !important;
+  transform: translateX(-10%) !important;
+  font-size: 2rem
 }

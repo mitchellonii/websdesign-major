@@ -3,7 +3,7 @@ import { Canvas } from '@react-three/fiber'
 import { Stage } from '@react-three/drei'
 import Model from '../3d/model'
 
-export default function ThreeDUTILS() {
+export default function ThreeDUTILS({ scrollAmount }) {
     const ref = useRef()
 
 
@@ -14,7 +14,7 @@ export default function ThreeDUTILS() {
         <Suspense fallback={null}>
             <Stage controls={ref} preset="rembrandt" intensity={1} environment="city">
 
-                <Model />
+                <Model scrollAmount={scrollAmount} />
 
             </Stage>
         </Suspense>

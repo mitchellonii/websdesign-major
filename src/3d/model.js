@@ -3,19 +3,14 @@ import { useGLTF } from "@react-three/drei";
 import iPhone from "../iphone.glb"
 export default function Model(props) {
     const { nodes, materials } = useGLTF(iPhone);
-    var [scrollAmount, setScrollAmount] = useState(0)
 
-    function handleScroll(e) {
-        setScrollAmount(e.target.scrollTop)
-    }
-    useEffect(() => {
-        document.querySelector("#root").onscroll = handleScroll
-    }, [])
 
     function calcRotationVector(scrollDist) {
         if (scrollDist < 240) {
-            return [Math.min(Math.PI / 2 * 3.4 + scrollAmount / (120 * 1), 6.4), Math.min(Math.PI * (scrollAmount / (300 * 1)), Math.PI), 0]
+            return [Math.min(Math.PI / 2 * 3.4 + props.scrollAmount / (120 * 1), 6), Math.min(Math.PI * (props.scrollAmount / (300 * 1)), Math.PI), 0]
         }
+        else return [6 + ((props.scrollAmount - 240) / 700), Math.PI * (240 / 300) + (props.scrollAmount - 240) / 400, 0]
+
     }
     function calcPos(scrollDist) {
         return [0, 0, 0]
@@ -23,7 +18,7 @@ export default function Model(props) {
 
 
     return (
-        <group {...props} scale={0.8} position={calcPos(scrollAmount)} rotation={calcRotationVector(scrollAmount)} dispose={null}>
+        <group {...props} scale={0.8} position={calcPos(props.scrollAmount)} rotation={calcRotationVector(props.scrollAmount)} dispose={null}>
             <mesh
                 castShadow
                 receiveShadow

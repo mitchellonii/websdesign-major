@@ -9,7 +9,7 @@ import RoutesIndex from "./routes/index"
 import RoutesPlans from "./routes/plans"
 import routes_404 from "./routes/404"
 import routes_about from "./routes/about"
-import routes_download from "./routes/download"
+import RoutesDownload from "./routes/download"
 import routes_login from "./routes/signin"
 
 import Header from "./components/header"
@@ -26,7 +26,7 @@ const router = createBrowserRouter([
       },
       {
         path: "download/",
-        element: routes_download,
+        element: <RoutesDownload></RoutesDownload>,
         errorElement: routes_404
       },
       {
