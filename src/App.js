@@ -6,7 +6,7 @@ import {
 } from "react-router-dom";
 
 import RoutesIndex from "./routes/index"
-import routes_plans from "./routes/plans"
+import RoutesPlans from "./routes/plans"
 import routes_404 from "./routes/404"
 import routes_about from "./routes/about"
 import routes_download from "./routes/download"
@@ -21,7 +21,7 @@ const router = createBrowserRouter([
     children: [
       {
         path: "plans/",
-        element: routes_plans,
+        element: <RoutesPlans></RoutesPlans>,
         errorElement: routes_404
       },
       {

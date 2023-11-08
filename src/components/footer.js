@@ -4,7 +4,7 @@ export default function Header() {
         <div className="gradientBackground" style={{ zIndex: -1 }}></div>
         <div className="footerFlex">
             <div>
-                <img src={auralis_logotxt}></img>
+                <img src={auralis_logotxt} alt="logo"></img>
             </div>
             <div className="textrowdivfooter">
                 <p className="headerSubtext">Company</p>

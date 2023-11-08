@@ -18,7 +18,7 @@ function Return() {
         var isVisible = (elemTop >= 0) && (elemBottom <= window.innerHeight);
         return isVisible;
     }
-    function handleScroll(e) {
+    var handleScroll = function (e) {
         setScrollAmount(e.target.scrollTop)
         Array.from(document.querySelectorAll("#fadeOnScrollView")).forEach(e => {
             if (isScrolledIntoView(e)) e.classList.add("fadeIn")
@@ -27,7 +27,7 @@ function Return() {
     }
     useEffect(() => {
         document.querySelector("#root").onscroll = handleScroll
-    }, [])
+    },)
 
     return <>   <div className="content">
         <div className="section">
