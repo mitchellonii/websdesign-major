@@ -635,3 +635,145 @@ mark {
 .add1 {
   height: auto !important;
 }
+
+
+.columnContainer {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  justify-content: center;
+}
+
+
+.columnRow {
+  height: max-content;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  flex-grow: 1;
+  justify-content: center;
+}
+
+.columnRow>div {
+  position: relative;
+  width: 20%;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  min-width: 100px;
+}
+
+.columnRow>div>p,
+.columnRow>div>.linkContainer {
+  line-height: 100%;
+  text-align: center;
+  width: 100%;
+  position: relative;
+  display: block
+}
+
+.columnRow>div>.linkContainer {
+  height: 30px;
+}
+
+.normalText>* {
+  position: relative;
+  text-align: left !important;
+  font-style: normal;
+  font-weight: bold
+}
+
+
+
+.columnRow>div>.linkContainer>a {
+  border-radius: 40px;
+  border: none;
+  width: max-content !important;
+  font-weight: bold;
+  box-sizing: border-box;
+  padding: 6px;
+  padding-left: 20px;
+  padding-right: 20px;
+  background: rgb(116, 182, 181);
+  border-radius: 40px;
+  text-decoration: none;
+  box-sizing: border-box;
+  color: white;
+  font-style: normal;
+  cursor: pointer;
+  position: relative;
+  top: 10px;
+  text-wrap: nowrap;
+}
+
+.auralisIconDecor {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 20px
+}
+
+.auralisIconDecor::before {
+  content: " ";
+  display: block;
+  background-image: url("./Auralis-app-icon-colour.png");
+  width: 40px;
+  height: 40px;
+  background-size: 40px 40px;
+  position: relative;
+  margin: 0;
+  transform: translateY(5px);
+}
+
+
+.abcde {
+  border-radius: 40px;
+  border: none;
+  width: max-content !important;
+  font-weight: bold;
+  box-sizing: border-box;
+  padding: 6px;
+  padding-left: 20px;
+  padding-right: 20px;
+  background: rgb(116, 182, 181);
+  border-radius: 40px;
+  box-sizing: border-box;
+  color: white;
+  font-style: normal;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+
+.loginContainer {
+  width: max(500px, 30%);
+  height: 500px;
+  border-radius: 10px;
+  box-shadow: 0px 18px 25px -12px rgba(0, 0, 0, 0.4);
+
+  position: relative;
+
+}
+
+
+.loginContainer>img {
+  position: relative;
+  top: 5px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 33%
+}
+
+.loginSignuptext {
+  font-style: normal;
+  font-weight: bold;
+  line-height: 40px;
+  text-align: center;
+  font-size: 35px;
+}
+
+.loginContainer>form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
