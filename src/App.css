@@ -11,6 +11,7 @@
   flex-direction: column;
   justify-content: flex-start;
   gap: 50px;
+  overflow-x: hidden
 }
 
 @font-face {
@@ -37,6 +38,7 @@ p {
   padding-top: 5px;
   padding-bottom: 5px;
   box-sizing: border-box;
+  z-index: 1000;
 }
 
 .headerContainer>.headerFlex {
@@ -115,6 +117,7 @@ div:has(.sticky) {
   left: 0px;
   width: 100%;
   height: max-content;
+  z-index: 9;
 }
 
 .centerFlex {
@@ -507,6 +510,11 @@ mark {
   flex-direction: column;
 }
 
+.gridInfoThing {
+  position: relative !important;
+  margin-top: 20px;
+}
+
 .canvasContainer {
   position: absolute;
   width: 100vw;
@@ -517,35 +525,6 @@ mark {
   transform: translateX(30%);
 }
 
-.columnContainer {
-  position: relative;
-  top: 0;
-  left: clamp(0, 300px, 300px);
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  box-sizing: border-box;
-  width: auto;
-  max-width: 80%;
-  left: 5%;
-  overflow: hidden;
-  border-radius: 10px;
-}
-
-.columnContainer>div {
-  flex-grow: 1;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  height: auto;
-  width: auto;
-  max-width: 250px;
-}
-
-.columnBlock {
-  width: 100%;
-  height: auto;
-}
 
 .backgroundCanvas {
   position: absolute;
@@ -556,42 +535,13 @@ mark {
   z-index: -100
 }
 
-.edge>.columnBlock {}
-
-.edge>.columnBlock>p {
-  width: calc(100% - 20px);
-  padding-right: 20px;
-  box-sizing: border-box;
-  text-align: right;
-  font-weight: bold
-}
-
-
-
-
-.free>.columnBlock>p {
-  width: calc(100%);
-  box-sizing: border-box;
-  text-align: center;
-  font-weight: normal;
-}
-
-.columnBlock {
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1)
-}
-
-.premium>.columnBlock>p {
-  width: calc(100%);
-  box-sizing: border-box;
-  text-align: center;
-  font-weight: normal;
-}
 
 .bold {
   font-weight: bold !important;
 }
 
 .downloadContainer {
+  position: relative;
   display: flex;
   width: 100%;
   height: auto;
@@ -599,6 +549,7 @@ mark {
   flex-grow: 1;
   justify-content: center;
   gap: 150px;
+  flex-wrap: wrap
 }
 
 .downloadContainer {
@@ -679,4 +630,8 @@ mark {
   left: 33% !important;
   transform: translateX(-10%) !important;
   font-size: 2rem
+}
+
+.add1 {
+  height: auto !important;
 }

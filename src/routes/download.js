@@ -29,7 +29,7 @@ export default function Download() {
     return <>  <div className="content">
         <div className="section">
             <p className="downloadTitle">Download</p>
-            <div className="centerFlex">
+            <div className="centerFlex" style={{ position: "relative", padding: "0" }}>
                 <div className="downloadContainer">
                     <div>
                         <p className="downloadTitle">Desktop</p>
@@ -37,7 +37,7 @@ export default function Download() {
                         <p>Download desktop client for Mac/Windows</p>
                         <p>Auralis 1.2.3-d</p>
 
-                        <p class="downloadButton" onClick={() => { alert('nothing here') }}>Download</p>
+                        <p className="downloadButton" onClick={() => { alert('nothing here') }}>Download</p>
                     </div>
                     <div>
                         <p className="downloadTitle">Mobile</p>
@@ -56,7 +56,7 @@ export default function Download() {
 
             </div>
         </div>
-        <div class="section">
+        <div className="section">
             <div className="gradientBackground" style={{ zIndex: -10 }}></div>
             <div className="backgroundCanvas" style={{ zIndex: -9 }}>
                 <div className='canvasContainer'>

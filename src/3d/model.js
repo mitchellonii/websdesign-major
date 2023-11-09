@@ -9,7 +9,7 @@ export default function Model(props) {
         if (scrollDist < 240) {
             return [Math.min(Math.PI / 2 * 3.4 + props.scrollAmount / (120 * 1), 6), Math.min(Math.PI * (props.scrollAmount / (300 * 1)), Math.PI), 0]
         }
-        else return [6 + ((props.scrollAmount - 240) / 700), Math.PI * (240 / 300) + (props.scrollAmount - 240) / 400, 0]
+        else return [6 + ((props.scrollAmount - 240) / 1000), Math.PI * (240 / 300) + (props.scrollAmount - 240) / 600, 0]
 
     }
     function calcPos(scrollDist) {

@@ -69,7 +69,7 @@ function Return() {
                 </div>
             </div>
         </div>
-        <div className="section" style={{ zIndex: 1 }}>
+        <div className="section">
             <div className="gradientBackground"></div>
             <div className="centerText" style={{ zIndex: 100, position: "absolute", opacity: Math.max(0, (scrollAmount - 200) / 400) > 1 ? 1 : Math.max(0, (scrollAmount - 200) / 400) }}>
                 <br></br><br></br><p className="sectionHeaderCompact">Why Auralis?</p>
@@ -84,7 +84,7 @@ function Return() {
 
             </div>
         </div>
-        <div className="section smallSection" style={{ background: "white" }}>
+        <div className="section smallSection add1" style={{ background: "white", zIndex: 3, transform: "translateY(-20px)" }} >
             <div className="flexGrid gridInfoThing">
                 <div id="fadeOnScrollView" className="delay0">
                     <p>With new accounts</p>
@@ -105,7 +105,7 @@ function Return() {
                     <Link className="Link" to={"/download"}>Download</Link>
                 </div>
             </div>
-        </div>
+        </div >
     </div ></>
 }
 

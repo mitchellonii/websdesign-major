@@ -14,6 +14,9 @@ import routes_login from "./routes/signin"
 
 import Header from "./components/header"
 import Footer from "./components/footer"
+
+import TopScroll from "./components/scrollToTop"
+
 const router = createBrowserRouter([
   {
     path: "/",
@@ -62,6 +65,7 @@ function Root() {
     <Header></Header>
     <Outlet ></Outlet>
     <Footer></Footer>
+    <TopScroll></TopScroll>
   </>
 }
 
