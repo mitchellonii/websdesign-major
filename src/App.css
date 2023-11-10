@@ -706,7 +706,8 @@ mark {
   text-wrap: nowrap;
 }
 
-.auralisIconDecor {
+.auralisIconDecor,
+.auralisIconDecorDark {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -717,6 +718,18 @@ mark {
   content: " ";
   display: block;
   background-image: url("./Auralis-app-icon-colour.png");
+  width: 40px;
+  height: 40px;
+  background-size: 40px 40px;
+  position: relative;
+  margin: 0;
+  transform: translateY(5px);
+}
+
+.auralisIconDecorDark::before {
+  content: " ";
+  display: block;
+  background-image: url("./Auralis-app-icon-dark.png");
   width: 40px;
   height: 40px;
   background-size: 40px 40px;
