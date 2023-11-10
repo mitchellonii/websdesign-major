@@ -1,7 +1,7 @@
 import icon from "../Auralis-app-icon-dark.png"
 export default <>
     <div className="content">
-        <div className="section">
+        <div className="section" style={{ height: "50vh", minHeight: "unset" }}>
             <div className="centerFlex" style={{ padding: 0, alignItems: "center", flexDirection: "column" }}>
                 <div className="loginContainer">
                     <p className="auralisIconDecor loginSignuptext">Login/Sign-up</p>
