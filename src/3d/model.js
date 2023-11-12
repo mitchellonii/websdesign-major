@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { useGLTF } from "@react-three/drei";
 import iPhone from "../iphone.glb"
 export default function Model(props) {

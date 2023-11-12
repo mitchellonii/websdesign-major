@@ -1,6 +1,5 @@
 import React, { useEffect } from 'react'
 import { Link } from "react-router-dom"
-import desktopSS from "../desktop-ss.png"
 export default function Viewer() {
     function isScrolledIntoView(el) {
         var rect = el.getBoundingClientRect();
@@ -114,12 +113,12 @@ export default function Viewer() {
                             </div>
                             <div style={{ border: "none" }}>
                                 <div className="linkContainer">
-                                    <Link className="linkbuy" to={"/login"}>Sign up</Link>
+                                    <Link className="linkbuy" to={"/login"} style={{ position: "unset" }}>Sign up</Link>
                                 </div>
                             </div>
                             <div style={{ border: "none" }}>
                                 <div className="linkContainer">
-                                    <Link className="linkbuy" to={"/login"}>Subscribe</Link>
+                                    <Link className="linkbuy" to={"/login"} style={{ position: "unset" }}>Subscribe</Link>
                                 </div>
 
                             </div>
@@ -129,6 +128,7 @@ export default function Viewer() {
                 <div className='section plansDesktopSection' style={{ height: "max-content", minHeight: "300px", overflow: "hidden" }}>
                     <div className="gradientBackground" style={{ zIndex: -100 }}></div>
                     <div className="centerText" style={{ zIndex: 100, position: "absolute" }}>
+                        <br></br>
                         <br></br>
                         <p className={`sectionText bulitin`} id="fadeOnScrollView">Free <mark>6-month</mark> trial for new users</p>
                         <br></br>

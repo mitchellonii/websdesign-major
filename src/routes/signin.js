@@ -9,7 +9,7 @@ export default <>
                         <input id="uname" placeholder="email@gmail.com" type="text"></input>
                         <label htmlFor="pword">Password</label>
                         <input id="pword" placeholder="password123" type="text"></input>
-                        <button type="submit">Log in</button>
+                        <button type="submit" onClick={() => { alert('nothing here') }}>Log in</button>
                     </form>
 
                 </div>

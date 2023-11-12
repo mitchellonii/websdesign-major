@@ -2,7 +2,7 @@
   position: fixed;
   top: 0;
   left: 0;
-  height: 105%;
+  height: 100%;
   overflow: scroll;
   color: black;
   padding: 0;
@@ -118,6 +118,7 @@ div:has(.sticky) {
   width: 100%;
   height: max-content;
   z-index: 9;
+  flex-grow: 1
 }
 
 .centerFlex {
@@ -387,7 +388,7 @@ mark {
   position: relative;
   width: 100%;
   height: auto;
-  bottom: 0
+  bottom: 0px;
 }
 
 .footer {
@@ -782,6 +783,19 @@ mark {
   }
 }
 
+@media only screen and (max-width:565px) {
+  .sectionText {
+    margin-top: 7px;
+  }
+
+}
+
+@media only screen and (max-width:465px) {
+  .sectionText {
+    margin-top: 5px;
+  }
+}
+
 
 .loginContainer>img {
   position: relative;
@@ -843,4 +857,21 @@ mark {
   text-decoration: none;
   margin-top: 50px;
   font-size: 15px;
+}
+
+.videoBG>video {
+  position: absolute;
+  z-index: -2;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  transform: translateY(-50%);
+}
+
+.videoBG {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
