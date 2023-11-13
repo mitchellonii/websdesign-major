@@ -76,7 +76,7 @@ export default function Viewer() {
                         </div>
                         <div className='columnRow'>
                             <div className="normalText">
-                                <p>Lorem ipsum</p>
+                                <p>Host group listening parties</p>
                             </div>
                             <div>
                                 <p></p>
@@ -87,7 +87,7 @@ export default function Viewer() {
                         </div>
                         <div className='columnRow'>
                             <div className="normalText">
-                                <p>Lorem ipsum</p>
+                                <p>Family addon avaliable, share with up to 5 other accounts</p>
                             </div>
                             <div>
                                 <p></p>
@@ -98,7 +98,7 @@ export default function Viewer() {
                         </div>
                         <div className='columnRow'>
                             <div className="normalText" style={{ border: "none" }}>
-                                <p>Lorem ipsum</p>
+                                <p>Access to beta features</p>
                             </div>
                             <div style={{ border: "none" }}>
                                 <p></p>

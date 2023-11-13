@@ -3,7 +3,7 @@ export default function Header() {
     return <><div className="footer"><div className="section smallSection">
         <div className="gradientBackground" style={{ zIndex: -1 }}></div>
         <div className="footerFlex">
-            <div>
+            <div style={{ width: "200px", maxWidth: "unset" }}>
                 <img src={auralis_logotxt} alt="logo"></img>
             </div>
             <div className="textrowdivfooter">

@@ -89,19 +89,19 @@ function Return() {
                 <div id="fadeOnScrollView" className="delay0">
                     <p>With new accounts</p>
                     <p>You could get 6 months free</p>
-                    <p>lorem ipsum</p>
+                    <p style={{ maxWidth: "200px" }}>Embark on a musical journey with Auralis, where signing up opens the door to a special offer – enjoy 6 months of free premium access. </p>
                     <Link className="Link" to={"/login"}>Start trial</Link>
                 </div>
                 <div id="fadeOnScrollView" className="delay300">
                     <p>View all our</p>
                     <p>Flexibile plans for any price range</p>
-                    <p>lorem ipsum</p>
+                    <p style={{ maxWidth: "200px" }}>Explore Auralis and discover our flexible plans designed to suit any budget. From budget-friendly options to premium packages, we've curated a range of plans to cater to every price range.</p>
                     <Link className="Link" to={"/plans"}>View plans</Link>
                 </div>
                 <div id="fadeOnScrollView" className="delay600">
                     <p>Download Auralis on</p>
                     <p>Any device</p>
-                    <p>lorem ipsum</p>
+                    <p style={{ maxWidth: "200px" }}>Experience the freedom to download your favorite tunes on any device with Auralis. Our user-friendly platform allows you to seamlessly access your music library offline, whether you're on your smartphone, tablet, or computer.</p>
                     <Link className="Link" to={"/download"}>Download</Link>
                 </div>
             </div>

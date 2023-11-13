@@ -410,7 +410,7 @@ mark {
   left: 0;
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
 }
 
@@ -781,11 +781,20 @@ mark {
     padding-top: 26vh;
     border-radius: 0;
   }
+
+  .centerFlex {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
 }
 
 @media only screen and (max-width:565px) {
   .sectionText {
     margin-top: 7px;
+  }
+
+  .headerFlex {
+    gap: 20px !important
   }
 
 }
@@ -863,9 +872,10 @@ mark {
   position: absolute;
   z-index: -2;
   top: 50%;
-  left: 0;
-  width: 100%;
-  transform: translateY(-50%);
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  transform: translate(-50%, -50%);
 }
 
 .videoBG {
